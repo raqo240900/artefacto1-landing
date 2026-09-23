@@ -83,15 +83,16 @@ border-radius: 100px;
 
 /* ---------- HERO ---------- */
 header.hero {
-padding: 28px 0 44px;
+padding: 28px 0 32px;
 }
 .eyebrow {
 font-family: 'IBM Plex Mono', monospace;
-font-size: 0.72rem;
+font-size: 0.85rem;
+font-weight: 500;
 letter-spacing: 0.1em;
 text-transform: uppercase;
 color: var(--cyan);
-margin: 0 0 14px;
+margin: 0 0 18px;
 display: inline-block;
 }
 h1 {
@@ -212,22 +213,24 @@ animation: bounce 1s infinite ease-in-out;
 }
 
 /* ---------- SECTIONS ---------- */
-section { padding: 46px 0; border-top: 1px solid var(--line); }
+section { border-top: 1px solid var(--line); }
+section.wrap { padding-top: 40px; padding-bottom: 40px; }
 
 .kicker {
 font-family: 'IBM Plex Mono', monospace;
-font-size: 0.72rem;
+font-size: 0.85rem;
+font-weight: 500;
 letter-spacing: 0.1em;
 text-transform: uppercase;
 color: var(--cyan);
-margin: 0 0 12px;
+margin: 0 0 20px;
 display: inline-block;
 }
 h2 {
 font-family: 'Fraunces', serif;
 font-weight: 600;
 font-size: 1.6rem;
-margin: 0 0 22px;
+margin: 0 0 28px;
 letter-spacing: -0.01em;
 color: var(--paper);
 }
@@ -355,14 +358,17 @@ box-shadow: 0 10px 30px -8px rgba(145,52,246,0.55);
 .wa-btn:hover { transform: translateY(-2px); }
 .wa-btn svg { width: 20px; height: 20px; }
 
-footer {
-padding: 30px 0 40px;
+footer.wrap {
+padding-top: 36px;
+padding-bottom: 40px;
+border-top: 1px solid var(--line);
+margin-top: 16px;
 text-align: center;
 }
 footer p {
-font-size: 0.78rem;
+font-size: 0.92rem;
 color: var(--muted);
-line-height: 1.6;
+line-height: 1.7;
 margin: 0;
 }
 </style>
@@ -377,13 +383,13 @@ margin: 0;
 <header class="hero wrap">
 <p class="eyebrow">Automatización de atención y ventas en WhatsApp</p>
 <h1>Atiende a tus clientes en todo momento con WhatsApp <em>automatizado</em></h1>
-<p class="lede">Con Flunova, tu WhatsApp responde consultas, gestiona pedidos y agenda citas automáticamente. Se deriva a una persona solo cuando es necesario.</p>
+<p class="lede">Con Flunova, tu WhatsApp responde consultas, gestiona pedidos y agenda citas automáticamente. Solo cuando es necesario se deriva a una persona.</p>
 
 <div class="phone" role="img" aria-label="Ejemplo de conversación de WhatsApp con el asistente respondiendo automáticamente">
 <div class="phone-head">
-<div class="phone-avatar">A1</div>
+<div class="phone-avatar">SD</div>
 <div>
-<div class="phone-name">Tu negocio</div>
+<div class="phone-name">Sonrisa Dental</div>
 <div class="phone-status">en línea</div>
 </div>
 </div>
@@ -398,14 +404,14 @@ margin: 0;
 </header>
 
 <section class="wrap">
-<p class="kicker">¿Para quién es esto?</p>
+<p class="kicker">¿Es para tu negocio?</p>
 <h2>Si tu negocio se nutre de cientos de mensajes de WhatsApp, Flunova es para ti.</h2>
 <div class="rubros">
 <div class="rubro"><span class="rubro-emoji">🛒</span><span class="rubro-label">Bodegas y tiendas</span></div>
 <div class="rubro"><span class="rubro-emoji">🍗</span><span class="rubro-label">Restaurantes y pollerías</span></div>
 <div class="rubro"><span class="rubro-emoji">💇</span><span class="rubro-label">Peluquerías y salones</span></div>
 <div class="rubro"><span class="rubro-emoji">🦷</span><span class="rubro-label">Clínicas dentales</span></div>
-<div class="rubro"><span class="rubro-emoji">🏋️</span><span class="rubro-label">Veterinarias</span></div>
+<div class="rubro"><span class="rubro-emoji">🐶</span><span class="rubro-label">Veterinarias</span></div>
 <div class="rubro"><span class="rubro-emoji">➕</span><span class="rubro-label">Y demás negocios</span></div>
 </div>
 </section>
@@ -417,21 +423,21 @@ margin: 0;
 <div class="paso-num">01</div>
 <div>
 <p class="paso-title">Tu cliente escribe como siempre</p>
-<p class="paso-desc">Al mismo número de WhatsApp de tu negocio por información.</p>
+<p class="paso-desc">Los mensajes de clientes llegan al número de WhatsApp de tu negocio.</p>
 </div>
 </div>
 <div class="paso">
 <div class="paso-num">02</div>
 <div>
 <p class="paso-title">El asistente responde con tu catálogo real</p>
-<p class="paso-desc">Precios, disponibilidad, horarios: arma el pedido o agenda la cita solo, consultando en tiempo real tu calendario y catálogo.</p>
+<p class="paso-desc">Precios, disponibilidad, horarios: arma el pedido o agenda la cita sin que intervengas, con la información de tu catálogo y tu agenda siempre al día.</p>
 </div>
 </div>
 <div class="paso">
 <div class="paso-num">03</div>
 <div>
 <p class="paso-title">Tú entras solo cuando de verdad hace falta</p>
-<p class="paso-desc">Verificar un pago, resolver un reclamo: el asistente nunca decide eso por su cuenta. Te notifica escenarios complejos.</p>
+<p class="paso-desc">Verificar un pago, resolver un reclamo: el asistente nunca decide casos complejos por su cuenta.</p>
 </div>
 </div>
 </div>
@@ -440,11 +446,10 @@ margin: 0;
 <section class="wrap">
 <p class="kicker">¿Por qué elegir Flunova?</p>
 <div class="porques">
-<div class="porque"><div class="porque-check">✓</div><div class="porque-text">Configuración personalizada acorde a los fines de tu negocio</div></div>
-<div class="porque"><div class="porque-check">✓</div><div class="porque-text">Sigue usando tu WhatsApp de siempre. El sistema se encarga de las consultas 24/7</div></div>
-<div class="porque"><div class="porque-check">✓</div><div class="porque-text">Sabes en todo momento quién pidió qué, cuándo, y en qué quedó</div></div>
-<div class="porque"><div class="porque-check">✓</div><div class="porque-text">No necesitas tener conocimiento técnico alguno</div></div>
-<div class="porque"><div class="porque-check">✓</div><div class="porque-text">Reduce el tiempo dedicado a responder las mismas consultas y aprovecha mejor tu día</div></div>
+<div class="porque"><div class="porque-check">✓</div><div class="porque-text">Configuración personalizada acorde a las características de tu negocio.</div></div>
+<div class="porque"><div class="porque-check">✓</div><div class="porque-text">Sigue usando WhatsApp como canal de atención. El sistema se encarga de las consultas 24/7 y automatiza procesos que demandan tiempo.</div></div>
+<div class="porque"><div class="porque-check">✓</div><div class="porque-text">No pierdes trazabilidad: tienes el registro de cada pedido, su fecha y su estado.</div></div>
+<div class="porque"><div class="porque-check">✓</div><div class="porque-text">Fácil de implementar y de utilizar. Sin instalar nada ni aprender nada nuevo.</div></div>
 </div>
 </section>
 
